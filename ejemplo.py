@@ -31,8 +31,8 @@ class Sistema:
       self.__lista_pacientes = []
     #   self.__lista_pacientes = {}
       self.__numero_pacientes = len(self.__lista_pacientes)
-def main():
 
+def main():
     while True:
         opcion = int(input("1. Nuevo paciente\n - 2. Numero de paciente\n - 3. Datos paciente\n - 4. ver datos del paciente 5.:  \n"))
         if opcion == 1:
@@ -54,7 +54,7 @@ def main():
         if opcion== 3:
             cedula = int(input("Ingrese la cedula a buscar: "))
         
-        for paciente in self.__lista_pacientes:
+        for paciente in Self.__lista_pacientes:
             if cedula == paciente.verCedula():
                 print("Nombre: " + paciente.verNombre())
                 print("Cedula: " + str(paciente.verCedula()))
@@ -66,6 +66,8 @@ def main():
             break
         else:
             print("Opcion invalida")    
+
+
 
 if __name__== "__main__":
     main()
